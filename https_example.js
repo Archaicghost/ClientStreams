@@ -7,10 +7,6 @@ var options = {
   path: '/'
 };
 
-var options = {
-  host: 'www.example.org',
-  path: '/'
-};
 
 // called by https when the request is made.
 var callback = function() {
@@ -38,3 +34,8 @@ var callback = function(response) {
     console.log(chunk.toString());
   });
 }
+
+var options = {
+  host: 'stream-large-file.herokuapp.com',
+  path: '/give-me-stuff-now'
+};
